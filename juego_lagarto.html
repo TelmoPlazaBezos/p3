@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piedra, Papel, Tijeras, Lagarto, Spock</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('foto2.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    
+    #result {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+    
+    img {
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Piedra, Papel, Tijeras, Lagarto, Spock</h1>
+  <p>Intenta ganar a Sheldon:</p>
+  <div>
+    <img src="piedra.jpg" alt="Piedra" onclick="jugar('piedra')">
+    <img src="papel.jpg" alt="Papel" onclick="jugar('papel')">
+    <img src="tijera.jpg" alt="Tijeras" onclick="jugar('tijeras')">
+    <img src="lagarto.jpg" alt="Lagarto" onclick="jugar('lagarto')">
+    <img src="spock.jpg" alt="Spock" onclick="jugar('spock')">
+  </div>
+  <div id="result"></div>
+
+  <script src="lagarto.js"></script>
+
+
+</body>
+</html>

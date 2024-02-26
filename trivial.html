@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('foto-de-fondo.jpg'); /* Cambia 'foto-de-fondo.jpg' por la ruta de tu imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    #pregunta-container {
+      background-image: url('foto2.jpg'); 
+      background-size: cover;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    
+    h1, h2 {
+      margin-top: 0;
+    }
+    
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Trivial</h1>
+  <div id="pregunta-container">
+    <h2 id="pregunta"></h2>
+    <label for="respuesta">Respuesta:</label>
+    <input type="text" id="respuesta">
+    <button onclick="verificarRespuesta()">Enviar</button>
+  </div>
+  <script src="trivial.js"></script>
+</body>
+</html>
